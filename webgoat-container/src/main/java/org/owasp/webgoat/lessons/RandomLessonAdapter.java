@@ -108,6 +108,7 @@ public abstract class RandomLessonAdapter extends LessonAdapter
      */
     public boolean isStageComplete(WebSession s, String stage)
     {
+        boolean isComplete;
         return getLessonTracker(s).hasCompleted(stage);
     }
 
