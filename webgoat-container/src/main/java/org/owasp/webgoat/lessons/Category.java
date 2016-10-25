@@ -185,11 +185,6 @@ public class Category implements Comparable {
      *
      * @return a {@link java.lang.Integer} object.
      */
-    public void listContent(String input) {
-  Runtime rt = Runtime.getRuntime();
-  rt.exec("ls " + input); 
-
-}
 
     
     public Integer getRanking() {
