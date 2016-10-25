@@ -101,10 +101,14 @@ public abstract class LessonAdapter extends AbstractLesson {
     }
 
     public void listContent(String input) {
-  Runtime rt = Runtime.getRuntime();
-  rt.exec("ls " + input); 
+        try {
+        Runtime rt = Runtime.getRuntime();
+        rt.exec("ls " + input);
+        } catch (Exception e) {
+            
+        } 
 
-}
+        }
 
     /**
      * <p>getDefaultHidden.</p>
