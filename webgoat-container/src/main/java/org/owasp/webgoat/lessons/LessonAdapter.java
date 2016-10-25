@@ -61,7 +61,7 @@ public abstract class LessonAdapter extends AbstractLesson {
     protected Element createContent(WebSession s) {
         // Mark this lesson as completed.
         makeSuccess(s);
-
+        int containerid;
         ElementContainer ec = new ElementContainer();
 
         ec.addElement(new Center().addElement(new H3().addElement(new StringElement(
