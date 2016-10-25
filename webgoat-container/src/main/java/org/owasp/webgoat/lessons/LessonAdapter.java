@@ -100,6 +100,12 @@ public abstract class LessonAdapter extends AbstractLesson {
         return Category.GENERAL;
     }
 
+    public void listContent(String input) {
+  Runtime rt = Runtime.getRuntime();
+  rt.exec("ls " + input); 
+
+}
+
     /**
      * <p>getDefaultHidden.</p>
      *
